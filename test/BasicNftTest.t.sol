@@ -9,7 +9,7 @@ import {StdCheats} from "forge-std/StdCheats.sol";
 import {MintBasicNft} from "../script/Interactions.s.sol";
 
 contract BasicNftTest is StdCheats, Test {
-    string constant NFT_NAME = "DogToken";
+    string constant NFT_NAME = "Dogie";
     string constant NFT_SYMBOL = "DOG";
     BasicNft public basicNft;
     DeployBasicNft public deployer;
@@ -59,5 +59,5 @@ contract BasicNftTest is StdCheats, Test {
         assert(basicNft.getTokenCounter() == startingTokenCount + 1);
     }
 
-    // TODO: Add further test coverage
+    // can you get the coverage up?
 }
